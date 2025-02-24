@@ -8,13 +8,12 @@
         <p class="bg-green-500 text-white p-2 text-center">{{ session('success') }}</p>
     @endif
 
-    <table class="w-full border border-gray-700 text-white">
+    <table class="w-full border border-gray-700 text-white text-center">
         <thead>
             <tr class="bg-gray-700">
                 <th class="p-2">ID</th>
                 <th class="p-2">Match</th>
                 <th class="p-2">Price</th>
-                <th class="p-2">Team Logo</th>
                 <th class="p-2">Actions</th>
             </tr>
         </thead>
@@ -24,15 +23,6 @@
                 <td class="p-2">{{ $team->id }}</td>
                 <td class="p-2">{{ $team->match }}</td>
                 <td class="p-2">${{ $team->price }}</td>
-                <td class="py-2 px-4 border">
-                    @if($team->team_file)
-                        <img src="{{ asset('storage/team_files/' . basename($team->team_file)) }}" 
-                            alt="Team Logo" class="w-16 h-16 object-cover rounded">
-                    @else
-                        <span class="text-gray-500">No Image</span>
-                    @endif
-                </td>
-
                 <td class="p-2">
                     <a href="{{ route('edit.team', $team->id) }}" class="bg-blue-500 text-white px-3 py-1 rounded">Edit</a>
                     <form action="{{ route('delete.team', $team->id) }}" method="POST" class="inline">

@@ -23,7 +23,7 @@ class AdminController extends Controller
         $request->validate([
             'match' => 'required|string|max:255',
             'price' => 'required|numeric',
-            'team_file' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+            
         ]);
     
         $teamFile = null;
@@ -35,7 +35,7 @@ class AdminController extends Controller
         Team::create([
             'match' => $request->match,
             'price' => $request->price,
-            'team_file' => $teamFile
+            'team_file' => "not required"
         ]);
     
         return redirect()->route('manage.team')->with('success', 'Team added successfully!');

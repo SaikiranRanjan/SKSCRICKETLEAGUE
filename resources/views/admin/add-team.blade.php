@@ -17,10 +17,6 @@
             <input type="number" name="price" required class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 focus:border-blue-400 focus:outline-none">
         </div>
 
-        <div>
-            <label class="block text-lg">Upload Team Logo</label>
-            <input type="file" name="team_file" class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 focus:border-blue-400 focus:outline-none">
-        </div>
 
         <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Save Team</button>
     </form>

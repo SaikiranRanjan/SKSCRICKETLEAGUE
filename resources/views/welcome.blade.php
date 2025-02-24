@@ -56,7 +56,7 @@
         <h2 class="text-3xl font-bold text-center text-yellow-400 mb-8">🏆 My Winning Screenshots</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                @foreach (['screenshot1.jpg', 'screenshot2.jpg', 'screenshot3.jpg', 'screenshot4.jpg', 'screenshot5.jpg'] as $screenshot)
+                @foreach (['screenshot_1.jpeg', 'screenshot_2.jpeg', 'screenshot_3.jpeg', 'screenshot_4.jpeg', 'screenshot_5.jpeg'] as $screenshot)
                     <div class="swiper-slide flex justify-center">
                         <img src="{{ asset('winning_screenshots/' . $screenshot) }}" alt="Winning Screenshot" class="rounded-lg shadow-lg w-full max-w-md object-cover">
                     </div>
