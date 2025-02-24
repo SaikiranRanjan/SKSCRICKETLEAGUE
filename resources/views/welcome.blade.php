@@ -29,14 +29,14 @@
     <!-- Header -->
     <header class="bg-gradient-to-r from-red-500 to-orange-500 py-8 shadow-lg">
         <div class="container mx-auto text-center">
-            <h1 class="text-5xl font-extrabold tracking-wide">🏏 SK's Cricket League</h1>
-            <p class="text-xl font-light opacity-90 mt-2">Play, Win & Dominate! 🔥</p>
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-wide">🏏 SK's Cricket League</h1>
+            <p class="text-lg sm:text-xl font-light opacity-90 mt-2">Play, Win & Dominate! 🔥</p>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="container mx-auto px-4 sm:px-6 py-12 flex-grow">
-        <h2 class="text-4xl font-bold text-center text-red-400 mb-12">🚀 Upcoming Matches</h2>
+        <h2 class="text-3xl sm:text-4xl font-bold text-center text-red-400 mb-12">🚀 Upcoming Matches</h2>
 
         <!-- Match Cards Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
@@ -53,7 +53,7 @@
 
     <!-- Winning Screenshots Carousel -->
     <section class="container mx-auto px-4 sm:px-6 mt-12">
-        <h2 class="text-3xl font-bold text-center text-yellow-400 mb-8">🏆 My Winning Screenshots</h2>
+        <h2 class="text-3xl sm:text-4xl font-bold text-center text-yellow-400 mb-8">🏆 My Winning Screenshots</h2>
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 @foreach (['screenshot_1.jpeg', 'screenshot_2.jpeg', 'screenshot_3.jpeg', 'screenshot_4.jpeg', 'screenshot_5.jpeg'] as $screenshot)
@@ -64,8 +64,8 @@
             </div>
             <!-- Pagination and Navigation -->
             <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev text-red-500"></div>
-            <div class="swiper-button-next text-red-500"></div>
+            <div class="swiper-button-prev text-red-500 hidden sm:block"></div>
+            <div class="swiper-button-next text-red-500 hidden sm:block"></div>
         </div>
     </section>
 
