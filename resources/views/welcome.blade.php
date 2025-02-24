@@ -87,13 +87,15 @@
     </main>
 
     <!-- Winners Section -->
+    <!-- Winners Section -->
     <section class="py-12 bg-slate-900/50">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-black text-center mb-8 text-amber-400">
                 🏆 Recent Winners
             </h2>
             
-            <div class="swiper-container relative">
+            <!-- Updated swiper container with overflow-hidden -->
+            <div class="swiper-container relative overflow-hidden">
                 <div class="swiper-wrapper">
                     @foreach (['screenshot_1.jpeg', 'screenshot_2.jpeg', 'screenshot_3.jpeg', 'screenshot_4.jpeg', 'screenshot_5.jpeg'] as $screenshot)
                     <div class="swiper-slide">
@@ -111,6 +113,7 @@
             </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer class="border-t border-slate-700/50 mt-12">
