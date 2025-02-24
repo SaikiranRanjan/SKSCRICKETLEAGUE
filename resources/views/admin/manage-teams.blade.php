@@ -22,7 +22,8 @@
             <tr class="border-b border-gray-600">
                 <td class="p-2">{{ $team->id }}</td>
                 <td class="p-2">{{ $team->match }}</td>
-                <td class="p-2">${{ $team->price }}</td>
+                <td class="p-2">₹{{ $team->price }}</td>
+
                 <td class="p-2">
                     <a href="{{ route('edit.team', $team->id) }}" class="bg-blue-500 text-white px-3 py-1 rounded">Edit</a>
                     <form action="{{ route('delete.team', $team->id) }}" method="POST" class="inline">
